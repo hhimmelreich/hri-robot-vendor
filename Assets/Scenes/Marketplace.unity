@@ -1596,7 +1596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0276ff7720f571458471a0694059c0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalAmountSpent: 0
+  experimentManager: {fileID: 441356201}
 --- !u!1001 &495989672
 PrefabInstance:
   m_ObjectHideFlags: 0
