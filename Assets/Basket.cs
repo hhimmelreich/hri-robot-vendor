@@ -51,7 +51,10 @@ public class Basket : MonoBehaviour
             //totalAmountSpent += good.GetComponent<Goods>().price;
             managerScript.moneySpent += good.GetComponent<Goods>().price;
             good.GetComponent<Goods>().price = 0f;
-
         }
+        
+        
     }
+
+    
 }

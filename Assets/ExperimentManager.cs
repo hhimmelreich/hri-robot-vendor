@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using UnityEditor;
 using UnityEngine;
 
 public class ExperimentManager : MonoBehaviour
@@ -8,7 +10,8 @@ public class ExperimentManager : MonoBehaviour
     public string condition;
     public float moneySpent = 0f;
 
-    //public Camera mainMenuCamera;
+    
+
 
     private MenuState menuState = MenuState.IDSelection;
     private enum MenuState
@@ -19,7 +22,6 @@ public class ExperimentManager : MonoBehaviour
         Running
     }
 
-    private float totalTime = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -30,10 +32,7 @@ public class ExperimentManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (menuState == MenuState.Running)
-        {
-            totalTime += Time.deltaTime;
-        }
+
     }
     
     private void OnGUI()
@@ -41,7 +40,6 @@ public class ExperimentManager : MonoBehaviour
         var x = 100;
         var y = 100;
         var w = 200;
-        var h = 50;
 
         GUI.backgroundColor = Color.cyan;
         GUI.skin.textField.fontSize = 30;
@@ -149,14 +147,27 @@ public class ExperimentManager : MonoBehaviour
 
     public void StartExperiment()
     {
-        //mainMenuCamera.gameObject.SetActive(false);
+
         //instantiate vendor
+        if (condition == "Human Vendor")
+        {
+            // Spawn Human
+        }
+        if (condition == "Robot Vendor")
+        {
+            // Spawn Robot
+        }
         
     }
     
     // Save data to some directory, this should be called when basket is placed on bike
-    public void SaveData(float moneySpent)
+    public void SaveData()
     {
-        
+        Debug.Log("Should save now");
+        string data = "ID: " + participantID + " | Condition: " + condition + " | Money spent: " + moneySpent; 
+        File.WriteAllText("D:/RobotVendorData/"+ participantID +".txt", data);
+
+        EditorApplication.isPlaying = false;
+        Application.Quit();
     }
 }
