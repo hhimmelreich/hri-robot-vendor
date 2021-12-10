@@ -1,29 +1,9 @@
 fileFormatVersion: 2
-guid: cf80f0c0327727c46806eae2278e2267
+guid: 75c7c15ec28e29749a8a2c2fc5aa77fd
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: MAIN MATERIAL (only modifiy this one!)
-    second: {fileID: 2100000, guid: a47f934e65be4494d90ae7f2a5418472, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: chocolate
-    second: {fileID: 2100000, guid: 489cbeb3a060a064d8d1fee6baa4503d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: vainlla 2
-    second: {fileID: 2100000, guid: 4f33bc76f74bf62429007dba578f703d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: vanilla
-    second: {fileID: 2100000, guid: 8e6bf86afcab417498e726073df197d2, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
