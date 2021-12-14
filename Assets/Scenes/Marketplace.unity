@@ -5346,6 +5346,102 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
+  - name: Robo-Baked Goods Questions
+    clip: {fileID: 8300000, guid: f5067c3b830ad524bbcce9dda26d0353, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Robo-Baked Goods Savory
+    clip: {fileID: 8300000, guid: 139fe8544a490ae478136a004a96e1b2, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Robo-Baked Goods Sweet
+    clip: {fileID: 8300000, guid: 6ff308f93dfe7c2418c0335dd054bb4d, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Robo-Brezel
+    clip: {fileID: 8300000, guid: e3633e16c22a5154d87ded96c0961fb3, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Robo-Carrots
+    clip: {fileID: 8300000, guid: 07bb662480fedca45bec628c663a04e7, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Robo-Endquestion no
+    clip: {fileID: 8300000, guid: c8224e523b6738047804d40535e13c7f, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Robo-Endquestion yes
+    clip: {fileID: 8300000, guid: 5d025c408a1721c438df6e6eafaedc2c, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Robo-Endquestion
+    clip: {fileID: 8300000, guid: 29f2729c716eaa6438f628ef82fd0e0a, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Robo-Energy Drink
+    clip: {fileID: 8300000, guid: da76a2588c650414fb6e10adfe5dcfcf, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Robo-Fruit Answer Sour
+    clip: {fileID: 8300000, guid: d4a7624e27990444294ac38b609f0535, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Robo-Fruit Answer Sweet
+    clip: {fileID: 8300000, guid: e840de2122e7f7b4ea1d55818963d8b9, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Robo-Fruits Question
+    clip: {fileID: 8300000, guid: e02ea7ba2b5d47843bf413cffd43a900, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Robo-Garlic
+    clip: {fileID: 8300000, guid: a5552d2a752da9a47922af5d618905a7, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: RoboJuice
+    clip: {fileID: 8300000, guid: 24f7b4e12a8a431498b3899e6b014c41, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Robo-Lemon
+    clip: {fileID: 8300000, guid: cca5c29193fbd674a866c40bff7039d9, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Robo-Wine
+    clip: {fileID: 8300000, guid: 5986b89e3b73ff441a84420b64c5dcf2, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!4 &1318538671
 Transform:
   m_ObjectHideFlags: 0
