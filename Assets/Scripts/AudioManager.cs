@@ -24,7 +24,7 @@ public class AudioManager : MonoBehaviour
 
     void Start()
     {
-
+        Play("Ambient Sound");
     }
     public void Play(string name)
     {
