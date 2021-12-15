@@ -6213,6 +6213,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -1990968323811559735, guid: ad0688df2cb86e340a5d1519ecf3d017, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7f6cc4e8f24c1294ea3753dea4fb01cc, type: 2}
     - target: {fileID: -1018664272722485354, guid: ad0688df2cb86e340a5d1519ecf3d017, type: 3}
       propertyPath: m_TagString
       value: Basket
@@ -6221,6 +6225,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Einkaufskorb_11_21
       objectReference: {fileID: 0}
+    - target: {fileID: 6317578925029434746, guid: ad0688df2cb86e340a5d1519ecf3d017, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7f6cc4e8f24c1294ea3753dea4fb01cc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad0688df2cb86e340a5d1519ecf3d017, type: 3}
 --- !u!1001 &1425524613
