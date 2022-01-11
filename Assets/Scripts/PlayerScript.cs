@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
-    GameObject vendor;
-    VendorScript vscript;
+    public GameObject vendor;
+    private VendorScript vscript;
     
     // Start is called before the first frame update
     void Start()
     {
-         //Calls Vendor Script to get access to Speak Function
-        vendor = GameObject.Find("Vendor");
-        vscript = (VendorScript)vendor.GetComponent(typeof(VendorScript));
+        //Calls Vendor Script to get access to Speak Function
+        vscript = vendor.GetComponent<VendorScript>();
+        //vscript = (VendorScript)vendor.GetComponent(typeof(VendorScript));
     }
 
     // Update is called once per frame
@@ -22,13 +22,29 @@ public class PlayerScript : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Vegetables")
+        switch(other.tag)
         {
-            //if vendor is human
+            case "Drinks":
+                vscript.AreaEntered(VendorScript.Location.Beverages);
+                //vscript.Speak("hum_VeggieSection");
+                Debug.Log("Beverages entered");
+                break;
+            case "Baked Goods":
+                vscript.AreaEntered(VendorScript.Location.Baked);
+                //vscript.Speak("hum_VeggieSection");
+                break;
+            case "Fruits":
+                vscript.AreaEntered(VendorScript.Location.Fruit);
+                //vscript.Speak("hum_VeggieSection");
+                break;
+            case "Vegetables":
+                vscript.AreaEntered(VendorScript.Location.Veggies);
+                //vscript.Speak("hum_VeggieSection");
+                Debug.Log("Veggies entered");
+                break;
             
-            vscript.Speak("hum_VeggieSection");
-            Debug.Log("sentence triggered");
         }
+
     }
 }
 
