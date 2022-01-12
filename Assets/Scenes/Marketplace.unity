@@ -32205,6 +32205,125 @@ MonoBehaviour:
     loop: 1
     alreadyplayed: 0
     source: {fileID: 0}
+  - name: hum_BakedGoods
+    clip: {fileID: 8300000, guid: 1a2322df766c8ae4680ce378b2079e32, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    alreadyplayed: 0
+    source: {fileID: 0}
+  - name: hum_Energydrink
+    clip: {fileID: 8300000, guid: 329f12b0b1704c6429af50fa0301e92d, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    alreadyplayed: 0
+    source: {fileID: 0}
+  - name: hum_Finished
+    clip: {fileID: 8300000, guid: 7e2f029a43a4a9845b39c71f47ed5791, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    alreadyplayed: 0
+    source: {fileID: 0}
+  - name: hum_FinishedNo
+    clip: {fileID: 8300000, guid: 350d520db8571a04f9876ad44b92110d, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    alreadyplayed: 0
+    source: {fileID: 0}
+  - name: hum_FinishedYes
+    clip: {fileID: 8300000, guid: 785862241e7f3a940afcc6514456f338, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    alreadyplayed: 0
+    source: {fileID: 0}
+  - name: hum_FruitsSection
+    clip: {fileID: 8300000, guid: 7cb47c41fc8367945a0ccb64ea969cfa, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    alreadyplayed: 0
+    source: {fileID: 0}
+  - name: hum_FruitsSour
+    clip: {fileID: 8300000, guid: 6914925482fd6674e99c97de55a56927, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    alreadyplayed: 0
+    source: {fileID: 0}
+  - name: hum_FruitsSweet
+    clip: {fileID: 8300000, guid: e2846afb5ecce7e40b06be86bc4b0f1a, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    alreadyplayed: 0
+    source: {fileID: 0}
+  - name: hum_Garlic
+    clip: {fileID: 8300000, guid: daeb789431f52104697ab225f887022c, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    alreadyplayed: 0
+    source: {fileID: 0}
+  - name: hum_Intro
+    clip: {fileID: 8300000, guid: e6708ce04a1d6734b87e548672484ead, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    alreadyplayed: 0
+    source: {fileID: 0}
+  - name: hum_Juice
+    clip: {fileID: 8300000, guid: 81055fa187005004ca340a60fe4c444a, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    alreadyplayed: 0
+    source: {fileID: 0}
+  - name: hum_Lemons
+    clip: {fileID: 8300000, guid: c3a7a09c4cad00d4a96dc717bd786269, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    alreadyplayed: 0
+    source: {fileID: 0}
+  - name: hum_Lemons
+    clip: {fileID: 8300000, guid: c3a7a09c4cad00d4a96dc717bd786269, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    alreadyplayed: 0
+    source: {fileID: 0}
+  - name: hum_SavouryGoods
+    clip: {fileID: 8300000, guid: 37450b61dbdb0f548900a54594c9323f, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    alreadyplayed: 0
+    source: {fileID: 0}
+  - name: hum_SweetGoods
+    clip: {fileID: 8300000, guid: b48979389244b1c4da4832788c59e9ac, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    alreadyplayed: 0
+    source: {fileID: 0}
+  - name: hum_Wine
+    clip: {fileID: 8300000, guid: 5cb9b714726e8c34595c2a6b17e77789, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    alreadyplayed: 0
+    source: {fileID: 0}
+  - name: hum_Pretzels
+    clip: {fileID: 8300000, guid: 886fe5d0d68b3944d86fa8a7ce3d92da, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    alreadyplayed: 0
+    source: {fileID: 0}
 --- !u!4 &1986456202
 Transform:
   m_ObjectHideFlags: 0
