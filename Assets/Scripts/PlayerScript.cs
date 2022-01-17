@@ -5,8 +5,13 @@ using UnityEngine;
 public class PlayerScript : MonoBehaviour
 {
     public GameObject vendor;
+    public GameObject fruitscanvas;
+    public GameObject bakedgoodscanvas;
     private VendorScript vscript;
-    
+    private bool drinksdialogue = false;
+    private bool bakedgoodsdialogue = false;
+    private bool fruitsdialogue = false;
+    private bool veggiedialogue = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,20 +36,42 @@ public class PlayerScript : MonoBehaviour
                 break;
             case "Baked Goods":
                 vscript.AreaEntered(VendorScript.Location.Baked);
+                
                 //vscript.Speak("hum_VeggieSection");
                 break;
             case "Fruits":
                 vscript.AreaEntered(VendorScript.Location.Fruit);
+                if (!fruitsdialogue)
+                {
+                    vscript.Speak("robo_FruitsQuestion");
+                    fruitscanvas.SetActive(true);
+                    fruitsdialogue = true;
+                }
                 //vscript.Speak("hum_VeggieSection");
                 break;
             case "Vegetables":
                 vscript.AreaEntered(VendorScript.Location.Veggies);
-                //vscript.Speak("hum_VeggieSection");
+                //checks if dialogue has been played
+                if (!veggiedialogue)
+                {
+                    //plays dialogue and prevents it from being played repeatedly
+                    vscript.Speak("robo_VeggieSection");
+                    veggiedialogue = true;
+                }
+                
                 Debug.Log("Veggies entered");
                 break;
             
         }
+        
 
+
+    }
+    //Function for Sour Button to progress dialogue
+    public void FruitsSour()
+    {
+        vscript.Speak("robo_FruitsSour");
+        fruitscanvas.SetActive(false);
     }
 }
 
