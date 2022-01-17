@@ -73,5 +73,10 @@ public class PlayerScript : MonoBehaviour
         vscript.Speak("robo_FruitsSour");
         fruitscanvas.SetActive(false);
     }
+    public void FruitsSweet()
+    {
+        vscript.Speak("robo_FruitsSweet");
+        fruitscanvas.SetActive(false);
+    }
 }
 
