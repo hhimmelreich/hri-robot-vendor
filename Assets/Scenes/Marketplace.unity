@@ -2921,7 +2921,7 @@ GameObject:
   - component: {fileID: 129756210}
   - component: {fileID: 129756209}
   m_Layer: 5
-  m_Name: SweetButton
+  m_Name: SweetGoodsButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11266,6 +11266,7 @@ GameObject:
   - component: {fileID: 568612218}
   - component: {fileID: 568612217}
   - component: {fileID: 568612216}
+  - component: {fileID: 568612219}
   m_Layer: 5
   m_Name: SourButton
   m_TagString: Untagged
@@ -11387,6 +11388,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 568612214}
   m_CullTransparentMesh: 1
+--- !u!65 &568612219
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 568612214}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &571773447
 GameObject:
   m_ObjectHideFlags: 0
@@ -31923,8 +31937,9 @@ GameObject:
   - component: {fileID: 1629948337}
   - component: {fileID: 1629948336}
   - component: {fileID: 1629948335}
+  - component: {fileID: 1629948338}
   m_Layer: 5
-  m_Name: SweetButton
+  m_Name: SweetFruitsButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32044,6 +32059,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1629948333}
   m_CullTransparentMesh: 1
+--- !u!65 &1629948338
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629948333}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1631086652
 PrefabInstance:
   m_ObjectHideFlags: 0
