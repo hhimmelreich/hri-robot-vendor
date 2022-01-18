@@ -39417,7 +39417,217 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de109074df3debb47ad2411e33746158, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundlist: []
+  soundlist:
+  - name: Ambient Sound
+    clip: {fileID: 8300000, guid: 4fabdb1e49732b44482a1ba0ae5427e7, type: 3}
+    volume: 0.647
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: hum_BakedGoods
+    clip: {fileID: 8300000, guid: 1a2322df766c8ae4680ce378b2079e32, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: hum_Energydrink
+    clip: {fileID: 8300000, guid: 329f12b0b1704c6429af50fa0301e92d, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: hum_Finished
+    clip: {fileID: 8300000, guid: 7e2f029a43a4a9845b39c71f47ed5791, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: hum_FinishedNo
+    clip: {fileID: 8300000, guid: 350d520db8571a04f9876ad44b92110d, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: hum_FinishedYes
+    clip: {fileID: 8300000, guid: 785862241e7f3a940afcc6514456f338, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: hum_FruitsQuestion
+    clip: {fileID: 8300000, guid: 7cb47c41fc8367945a0ccb64ea969cfa, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: hum_FruitsSweet
+    clip: {fileID: 8300000, guid: e2846afb5ecce7e40b06be86bc4b0f1a, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: hum_FruitsSour
+    clip: {fileID: 8300000, guid: 6914925482fd6674e99c97de55a56927, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: hum_Garlic
+    clip: {fileID: 8300000, guid: daeb789431f52104697ab225f887022c, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: hum_Intro
+    clip: {fileID: 8300000, guid: e6708ce04a1d6734b87e548672484ead, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: hum_Juice
+    clip: {fileID: 8300000, guid: 81055fa187005004ca340a60fe4c444a, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: hum_Lemons
+    clip: {fileID: 8300000, guid: c3a7a09c4cad00d4a96dc717bd786269, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: hum_SavouryGoods
+    clip: {fileID: 8300000, guid: 37450b61dbdb0f548900a54594c9323f, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: hum_SweetGoods
+    clip: {fileID: 8300000, guid: b48979389244b1c4da4832788c59e9ac, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: hum_VeggieSection
+    clip: {fileID: 8300000, guid: f451092624ead63438dd7a4eca673d83, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: hum_Wine
+    clip: {fileID: 8300000, guid: 5cb9b714726e8c34595c2a6b17e77789, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: hum_Pretzels
+    clip: {fileID: 8300000, guid: 886fe5d0d68b3944d86fa8a7ce3d92da, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: robo_BakedGoods
+    clip: {fileID: 8300000, guid: f5067c3b830ad524bbcce9dda26d0353, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: robo_Energydrink
+    clip: {fileID: 8300000, guid: da76a2588c650414fb6e10adfe5dcfcf, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: robo_Finished
+    clip: {fileID: 8300000, guid: 29f2729c716eaa6438f628ef82fd0e0a, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: robo_FinishedNo
+    clip: {fileID: 8300000, guid: c8224e523b6738047804d40535e13c7f, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: robo_FinishedYes
+    clip: {fileID: 8300000, guid: 5d025c408a1721c438df6e6eafaedc2c, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: robo_FruitsQuestion
+    clip: {fileID: 8300000, guid: e02ea7ba2b5d47843bf413cffd43a900, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: robo_FruitsSour
+    clip: {fileID: 8300000, guid: d4a7624e27990444294ac38b609f0535, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: robo_FruitsSweet
+    clip: {fileID: 8300000, guid: e840de2122e7f7b4ea1d55818963d8b9, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: robo_Garlic
+    clip: {fileID: 8300000, guid: a5552d2a752da9a47922af5d618905a7, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: robo_Intro
+    clip: {fileID: 8300000, guid: 6d18016efa2e33c40bf877e4913621e6, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: robo_Juice
+    clip: {fileID: 8300000, guid: 24f7b4e12a8a431498b3899e6b014c41, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: robo_Lemons
+    clip: {fileID: 8300000, guid: cca5c29193fbd674a866c40bff7039d9, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: robo_SavouryGoods
+    clip: {fileID: 8300000, guid: 139fe8544a490ae478136a004a96e1b2, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: robo_SweetGoods
+    clip: {fileID: 8300000, guid: 6ff308f93dfe7c2418c0335dd054bb4d, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: robo_Wine
+    clip: {fileID: 8300000, guid: 5986b89e3b73ff441a84420b64c5dcf2, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: robo_VeggieSection
+    clip: {fileID: 8300000, guid: 07bb662480fedca45bec628c663a04e7, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: robo_Pretzels
+    clip: {fileID: 8300000, guid: e3633e16c22a5154d87ded96c0961fb3, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!4 &1986456202
 Transform:
   m_ObjectHideFlags: 0
