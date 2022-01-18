@@ -35,7 +35,7 @@ public class VendorScript : MonoBehaviour
     {
         
     }
-    private void Speak(string sentence)
+    public void Speak(string sentence)
     {
         FindObjectOfType<AudioManager>().Play(sentence);
         Debug.Log("Vendor Speaks");
