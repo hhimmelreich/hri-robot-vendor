@@ -67,7 +67,7 @@ public class PlayerScript : MonoBehaviour
 
 
     }
-    //Function for Sour Button to progress dialogue
+    //Functions for Dialogue Progression
     public void FruitsSour()
     {
         vscript.Speak("robo_FruitsSour");

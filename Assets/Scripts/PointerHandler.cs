@@ -7,6 +7,8 @@ using Valve.VR.Extras;
 
 public class PointerHandler : MonoBehaviour
 {
+    //This script handles the actions of the pointer and the ones the pointer starts by clicking buttons
+    
     public SteamVR_LaserPointer laserPointer;
     public PlayerScript player;
     // Start is called before the first frame update
@@ -18,6 +20,7 @@ public class PointerHandler : MonoBehaviour
         laserPointer.PointerClick += PointerClick;
     }
 
+    //Checks which object the pointer is clicking on and does corresponding action
     public void PointerClick (object sender, PointerEventArgs e)
     {
         if (e.target.name == "SweetFruitsButton")
@@ -30,14 +33,5 @@ public class PointerHandler : MonoBehaviour
             player.FruitsSour();
         }
     }
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+  
 }
