@@ -34646,9 +34646,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beverageLoc: {fileID: 1223091591}
-  bakedLoc: {fileID: 0}
+  bakedLoc: {fileID: 1081935154}
   FruitLoc: {fileID: 2088853443}
   VeggiesLoc: {fileID: 650174798}
+  fruitscanvas: {fileID: 0}
+  bakedgoodscanvas: {fileID: 0}
 --- !u!1001 &1758624455
 PrefabInstance:
   m_ObjectHideFlags: 0
