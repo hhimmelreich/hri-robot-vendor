@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR.Extras;
 
 public class PlayerScript : MonoBehaviour
 {
     public GameObject vendor;
     public GameObject fruitscanvas;
     public GameObject bakedgoodscanvas;
+    public SteamVR_LaserPointer steamVR_LaserPointer;
     private VendorScript vscript;
     private bool drinksdialogue = false;
     private bool bakedgoodsdialogue = false;
@@ -44,7 +46,8 @@ public class PlayerScript : MonoBehaviour
                 if (!fruitsdialogue)
                 {
                     vscript.Speak("robo_FruitsQuestion");
-                    fruitscanvas.SetActive(true);
+                    Invoke("fruitscanvas.SetActive(true)", 3);
+                    steamVR_LaserPointer.enabled=true;
                     fruitsdialogue = true;
                 }
                 //vscript.Speak("hum_VeggieSection");
@@ -72,11 +75,13 @@ public class PlayerScript : MonoBehaviour
     {
         vscript.Speak("robo_FruitsSour");
         fruitscanvas.SetActive(false);
+        steamVR_LaserPointer.enabled = false;
     }
     public void FruitsSweet()
     {
         vscript.Speak("robo_FruitsSweet");
         fruitscanvas.SetActive(false);
+        steamVR_LaserPointer.enabled = false;
     }
 }
 
