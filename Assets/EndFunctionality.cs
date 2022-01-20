@@ -5,8 +5,8 @@ using UnityEngine;
 public class EndFunctionality : MonoBehaviour
 {
     public GameObject experimentManager;
-    public GameObject finishedCanvas;
-    public VendorScript vendor;
+    //public GameObject finishedCanvas;
+    //public VendorScript vendor;
     private ExperimentManager managerScript;
     
     // Start is called before the first frame update
