@@ -10,7 +10,7 @@ public class PointerHandler : MonoBehaviour
     //This script handles the actions of the pointer and the ones the pointer starts by clicking buttons
     
     public SteamVR_LaserPointer laserPointer;
-    public PlayerScript player;
+    public VendorScript vendor;
     // Start is called before the first frame update
 
     private void Awake()
@@ -26,11 +26,19 @@ public class PointerHandler : MonoBehaviour
         if (e.target.name == "SweetFruitsButton")
         {
             Debug.Log("Sweet Button was clicked");
-            player.FruitsSweet();
+            vendor.FruitsSweet();
         }else if (e.target.name == "SourButton")
         {
             Debug.Log("Sour Button was clicked");
-            player.FruitsSour();
+            vendor.FruitsSour();
+        }else if (e.target.name == "SweetGoodsButton")
+        {
+            Debug.Log("Sweet Goods Button was clicked");
+            vendor.BakedGoodsSweet();
+        }else if (e.target.name == "SavouryButton")
+        {
+            Debug.Log("Savoury Button was clicked");
+            vendor.BakedGoodsSavoury();
         }
     }
   

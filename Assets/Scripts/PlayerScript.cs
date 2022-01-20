@@ -67,16 +67,6 @@ public class PlayerScript : MonoBehaviour
 
 
     }
-    //Functions for Dialogue Progression
-    public void FruitsSour()
-    {
-        vscript.Speak("robo_FruitsSour");
-        fruitscanvas.SetActive(false);
-    }
-    public void FruitsSweet()
-    {
-        vscript.Speak("robo_FruitsSweet");
-        fruitscanvas.SetActive(false);
-    }
+
 }
 

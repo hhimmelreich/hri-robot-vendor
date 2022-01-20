@@ -3389,7 +3389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   laserPointer: {fileID: 152409666}
-  player: {fileID: 1515434539}
+  vendor: {fileID: 1757936193}
 --- !u!4 &144363881
 Transform:
   m_ObjectHideFlags: 0
@@ -32937,6 +32937,50 @@ Transform:
   m_Father: {fileID: 296019508}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 1.194, y: 4.397, z: -63.506}
+--- !u!1 &1685867854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1685867855}
+  - component: {fileID: 1685867856}
+  m_Layer: 0
+  m_Name: SweetGoodsButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1685867855
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685867854}
+  m_LocalRotation: {x: -0, y: 0.19907837, z: -0, w: 0.97998357}
+  m_LocalPosition: {x: 4.057, y: 6.789, z: -14.931}
+  m_LocalScale: {x: 0.12586208, y: 0.16249211, z: 0.87078}
+  m_Children: []
+  m_Father: {fileID: 2137946891}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 22.966, z: 0}
+--- !u!65 &1685867856
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685867854}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1692269298
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34649,8 +34693,9 @@ MonoBehaviour:
   bakedLoc: {fileID: 1081935154}
   FruitLoc: {fileID: 2088853443}
   VeggiesLoc: {fileID: 650174798}
-  fruitscanvas: {fileID: 0}
-  bakedgoodscanvas: {fileID: 0}
+  fruitscanvas: {fileID: 1701030092}
+  bakedgoodscanvas: {fileID: 5477162}
+  pointer: {fileID: 144363880}
 --- !u!1001 &1758624455
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38243,6 +38288,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1381337932556463226, guid: 339ee11b179068d418260ae613c9baf7, type: 3}
   m_PrefabInstance: {fileID: 1906920876}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1917819193
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1917819194}
+  - component: {fileID: 1917819195}
+  m_Layer: 0
+  m_Name: SavoryButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1917819194
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917819193}
+  m_LocalRotation: {x: -0, y: 0.19907837, z: -0, w: 0.97998357}
+  m_LocalPosition: {x: 4.798, y: 6.789, z: -13.183}
+  m_LocalScale: {x: 0.12586208, y: 0.16249211, z: 0.87078}
+  m_Children: []
+  m_Father: {fileID: 2137946891}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 22.966, z: 0}
+--- !u!65 &1917819195
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917819193}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1929476771
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42734,6 +42823,8 @@ Transform:
   - {fileID: 310466043}
   - {fileID: 223809938}
   - {fileID: 528759269}
+  - {fileID: 1685867855}
+  - {fileID: 1917819194}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
