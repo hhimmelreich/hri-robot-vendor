@@ -194,7 +194,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5348371926614583787}
   m_Layer: 0
-  m_Name: WaterBottle
+  m_Name: Juice_bottle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -282,10 +282,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Water_Bottle_OBJ
       objectReference: {fileID: 0}
-    - target: {fileID: 8505996225427705791, guid: 477ef6ebda9df2446a959828627b383e, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 9ead1f35ce200b042a265a31076f83d2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 477ef6ebda9df2446a959828627b383e, type: 3}
 --- !u!4 &1323345869751868389 stripped
