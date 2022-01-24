@@ -118,7 +118,7 @@ public class VendorScript : MonoBehaviour
                     bufferAudio = "robo_BakedGoods";
                     bakedgoodsdialogue = true;
                     bakedgoodscanvas.SetActive(true);
-                    pointer.enabled = true;
+                    //pointer.enabled = true;
                 }
                 readyToMove = false;
                 break;
@@ -129,7 +129,7 @@ public class VendorScript : MonoBehaviour
                     bufferAudio = "robo_FruitsQuestion";
                     fruitsdialogue = true;
                     fruitscanvas.SetActive(true);
-                    pointer.enabled = true;
+                    //pointer.enabled = true;
                 }
                 
                 readyToMove = false;
@@ -150,26 +150,26 @@ public class VendorScript : MonoBehaviour
     {
         Speak("robo_FruitsSour");
         fruitscanvas.SetActive(false);
-        pointer.enabled = false;
+        //pointer.enabled = false;
     }
     public void FruitsSweet()
     {
         Speak("robo_FruitsSweet");
         fruitscanvas.SetActive(false);
-        pointer.enabled = false;
+        //pointer.enabled = false;
     }
 
     public void BakedGoodsSavoury()
     {
         Speak("robo_SavouryGoods");
         bakedgoodscanvas.SetActive(false);
-        pointer.enabled = false;
+        //pointer.enabled = false;
     }
 
     public void BakedGoodsSweet()
     {
         Speak("robe_SweetGoods");
         bakedgoodscanvas.SetActive(false);
-        pointer.enabled = false;
+        //pointer.enabled = false;
     }
 }
