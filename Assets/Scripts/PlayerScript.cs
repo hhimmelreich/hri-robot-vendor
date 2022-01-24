@@ -43,8 +43,8 @@ public class PlayerScript : MonoBehaviour
                 vscript.AreaEntered(VendorScript.Location.Fruit);
                 if (!fruitsdialogue)
                 {
-                    vscript.Speak("robo_FruitsQuestion");
-                    fruitscanvas.SetActive(true);
+                    //vscript.Speak("robo_FruitsQuestion");
+                    //fruitscanvas.SetActive(true);
                     fruitsdialogue = true;
                 }
                 //vscript.Speak("hum_VeggieSection");
@@ -55,7 +55,7 @@ public class PlayerScript : MonoBehaviour
                 if (!veggiedialogue)
                 {
                     //plays dialogue and prevents it from being played repeatedly
-                    vscript.Speak("robo_VeggieSection");
+                    //vscript.Speak("robo_VeggieSection");
                     veggiedialogue = true;
                 }
                 
@@ -67,16 +67,6 @@ public class PlayerScript : MonoBehaviour
 
 
     }
-    //Functions for Dialogue Progression
-    public void FruitsSour()
-    {
-        vscript.Speak("robo_FruitsSour");
-        fruitscanvas.SetActive(false);
-    }
-    public void FruitsSweet()
-    {
-        vscript.Speak("robo_FruitsSweet");
-        fruitscanvas.SetActive(false);
-    }
+
 }
 
