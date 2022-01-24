@@ -36,6 +36,8 @@ public class VendorScript : MonoBehaviour
     private bool bakedgoodsdialogue = false;
     private bool fruitsdialogue = false;
     private bool veggiedialogue = false;
+
+    public PointerHandler pointer;
     
     // this needs to be replaced by real function
     private bool audioClipPlayed = true;
@@ -102,24 +104,72 @@ public class VendorScript : MonoBehaviour
         {
             case Location.Beverages:
                 bufferLocation = beverageLoc.position;
-                bufferAudio = "robo_Juice";
+                if (!drinksdialogue)
+                {
+                    bufferAudio = "robo_Juice";
+                    drinksdialogue = true;
+                }
                 readyToMove = false;
                 break;
             case Location.Baked:
                 bufferLocation = bakedLoc.position;
-                bufferAudio = "robo_BakedGoods";
+                if (!bakedgoodsdialogue)
+                {
+                    bufferAudio = "robo_BakedGoods";
+                    bakedgoodsdialogue = true;
+                    bakedgoodscanvas.SetActive(true);
+                    //pointer.enabled = true;
+                }
                 readyToMove = false;
                 break;
             case Location.Fruit:
                 bufferLocation = FruitLoc.position;
-                bufferAudio = "robo_FruitsQuestion";
+                if (!fruitsdialogue)
+                {
+                    bufferAudio = "robo_FruitsQuestion";
+                    fruitsdialogue = true;
+                    fruitscanvas.SetActive(true);
+                    //pointer.enabled = true;
+                }
+                
                 readyToMove = false;
                 break;
             case Location.Veggies:
                 bufferLocation = VeggiesLoc.position;
-                bufferAudio = "robo_VeggieSection";
+                if (!veggiedialogue)
+                {
+                    bufferAudio = "robo_VeggieSection";
+                    veggiedialogue = true;                
+                }
                 readyToMove = false;
                 break;
         }
+    }
+    //Functions for Dialogue progression called in PointerHandler Script
+    public void FruitsSour()
+    {
+        Speak("robo_FruitsSour");
+        fruitscanvas.SetActive(false);
+        //pointer.enabled = false;
+    }
+    public void FruitsSweet()
+    {
+        Speak("robo_FruitsSweet");
+        fruitscanvas.SetActive(false);
+        //pointer.enabled = false;
+    }
+
+    public void BakedGoodsSavoury()
+    {
+        Speak("robo_SavouryGoods");
+        bakedgoodscanvas.SetActive(false);
+        //pointer.enabled = false;
+    }
+
+    public void BakedGoodsSweet()
+    {
+        Speak("robe_SweetGoods");
+        bakedgoodscanvas.SetActive(false);
+        //pointer.enabled = false;
     }
 }
