@@ -121,7 +121,23 @@ public class VendorScript : MonoBehaviour
         }
     }
 
+    public void SpecialVoiceLine(string name)
+    {
+        StartCoroutine(PlayVoiceLine(name));
+    }
 
+    IEnumerator PlayVoiceLine(string name)
+    {
+        while(!readyToSpeak | !readyToMove)
+        {
+            yield return null;
+        }
+        audioManager.Play(name);
+        readyToSpeak = false;
+        Debug.Log("coroutine garlic");
+        yield break;
+    }
+    
     public void AreaEntered(Location locationEntered)
     {
         // switch case depending on which location is entered
