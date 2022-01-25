@@ -1,9 +1,12 @@
+using System.Collections;
 using UnityEngine.Audio;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
     public Sound[] soundlist;
+
+    public VendorScript vendor;
     // Start is called before the first frame update
     void Awake()
     {
@@ -27,12 +30,25 @@ public class AudioManager : MonoBehaviour
     {
         Play("Ambient Sound");
     }
+    
     public void Play(string name)
     {
         // searches the sound in the list and plays it
         Sound s = System.Array.Find(soundlist, sound => sound.name == name);
         s.source.Play();
+        
+        StartCoroutine(checkIfFinished(s.source));
     }
 
+    IEnumerator checkIfFinished(AudioSource source)
+    {
+        while (source.isPlaying)
+        {
+            yield return null;
+        }
+
+        vendor.readyToSpeak = true;
+        Debug.Log("AudioManager: ReadyToSpeak again.");
+    }
    
 }
