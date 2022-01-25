@@ -41170,6 +41170,18 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: robo_Zucchini
+    clip: {fileID: 8300000, guid: ebde94da158602847ac6cbc3afbb439b, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: hum_Zucchini
+    clip: {fileID: 8300000, guid: 0422ee9e50cacb342bc485de8e1e0955, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
   vendor: {fileID: 1757936193}
 --- !u!4 &1986456202
 Transform:

@@ -65,7 +65,7 @@ public class PlayerScript : MonoBehaviour
                 break;
             case "Zucchini":
                 // play zucchini voiceline
-                //vscript.SpecialVoiceLine("");
+                vscript.SpecialVoiceLine("robo_Zucchini");
                 // enable zucchini offer
                 shoppingBasket.zucchiniOffer = true;
                 break;
