@@ -15,7 +15,7 @@ public class VendorScript : MonoBehaviour
     private Location vendorLocation = Location.Beverages;
 
     private bool readyToMove = true;
-    private bool readyToSpeak = true;
+    public bool readyToSpeak = true;
 
     public Transform beverageLoc;
     public Transform bakedLoc;
@@ -38,10 +38,7 @@ public class VendorScript : MonoBehaviour
     private bool veggiedialogue = false;
 
     public PointerHandler pointer;
-    
-    // this needs to be replaced by real function
-    private bool audioClipPlayed = true;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -54,7 +51,7 @@ public class VendorScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
         if (!readyToMove)
         {
             if (Vector3.Distance(transform.position, agent.destination) < 1)
@@ -63,14 +60,6 @@ public class VendorScript : MonoBehaviour
             }
         }
 
-        if (!readyToSpeak)
-        {
-            if (audioClipPlayed)
-            {
-                readyToSpeak = true;
-            }
-        }
-        
         if (readyToMove && readyToSpeak)
         {
             
@@ -82,9 +71,10 @@ public class VendorScript : MonoBehaviour
             } else if (!bufferAudio.Equals(""))
             {
                 audioManager.Play(bufferAudio);
+                readyToSpeak = false;
+                StartCoroutine(StartDialog(bufferAudio));
                 Debug.Log("Should speak now");
                 bufferAudio = "";
-                readyToSpeak = false;
             }
         }
         
@@ -98,8 +88,59 @@ public class VendorScript : MonoBehaviour
         Debug.Log("Vendor Speaks");
     }
 
+
+    IEnumerator StartDialog(string audioName)
+    {
+        switch (audioName)
+        {
+            case "robo_Juice":
+                drinksdialogue = true;
+                break;
+            case "robo_BakedGoods":
+                bakedgoodsdialogue = true;
+                while (!readyToSpeak)
+                {
+                    yield return null;
+                }
+                bakedgoodscanvas.SetActive(true);
+                break;
+            case "robo_FruitsQuestion":
+                fruitsdialogue = true;
+                while (!readyToSpeak)
+                {
+                    yield return null;
+                    Debug.Log("VendorScript: Dialog is waiting on audio to finish.");
+                }
+                fruitscanvas.SetActive(true);
+                break;
+            case "robo_VeggieSection":
+                veggiedialogue = true; 
+                break;
+            default:
+                break;
+        }
+    }
+
+    public void SpecialVoiceLine(string name)
+    {
+        StartCoroutine(PlayVoiceLine(name));
+    }
+
+    IEnumerator PlayVoiceLine(string name)
+    {
+        while(!readyToSpeak | !readyToMove)
+        {
+            yield return null;
+        }
+        audioManager.Play(name);
+        readyToSpeak = false;
+        Debug.Log("coroutine garlic");
+        yield break;
+    }
+    
     public void AreaEntered(Location locationEntered)
     {
+        // switch case depending on which location is entered
         switch (locationEntered)
         {
             case Location.Beverages:
@@ -107,41 +148,30 @@ public class VendorScript : MonoBehaviour
                 if (!drinksdialogue)
                 {
                     bufferAudio = "robo_Juice";
-                    drinksdialogue = true;
                 }
-                readyToMove = false;
                 break;
             case Location.Baked:
                 bufferLocation = bakedLoc.position;
                 if (!bakedgoodsdialogue)
                 {
                     bufferAudio = "robo_BakedGoods";
-                    bakedgoodsdialogue = true;
-                    bakedgoodscanvas.SetActive(true);
                     //pointer.enabled = true;
                 }
-                readyToMove = false;
                 break;
             case Location.Fruit:
                 bufferLocation = FruitLoc.position;
                 if (!fruitsdialogue)
                 {
                     bufferAudio = "robo_FruitsQuestion";
-                    fruitsdialogue = true;
-                    fruitscanvas.SetActive(true);
                     //pointer.enabled = true;
                 }
-                
-                readyToMove = false;
                 break;
             case Location.Veggies:
                 bufferLocation = VeggiesLoc.position;
                 if (!veggiedialogue)
                 {
                     bufferAudio = "robo_VeggieSection";
-                    veggiedialogue = true;                
                 }
-                readyToMove = false;
                 break;
         }
     }
