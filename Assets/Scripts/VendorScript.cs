@@ -198,7 +198,7 @@ public class VendorScript : MonoBehaviour
 
     public void BakedGoodsSweet()
     {
-        Speak("robe_SweetGoods");
+        Speak("robo_SweetGoods");
         bakedgoodscanvas.SetActive(false);
         //pointer.enabled = false;
     }

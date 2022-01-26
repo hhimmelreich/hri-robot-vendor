@@ -35,7 +35,7 @@ public class PointerHandler : MonoBehaviour
         {
             Debug.Log("Sweet Goods Button was clicked");
             vendor.BakedGoodsSweet();
-        }else if (e.target.name == "SavouryButton")
+        }else if (e.target.name == "SavoryButton")
         {
             Debug.Log("Savoury Button was clicked");
             vendor.BakedGoodsSavoury();
