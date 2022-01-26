@@ -93,7 +93,7 @@ public class VendorScript : MonoBehaviour
     {
         switch (audioName)
         {
-            case "robo_Juice":
+            case "robo_Wine":
                 drinksdialogue = true;
                 break;
             case "robo_BakedGoods":
@@ -109,7 +109,6 @@ public class VendorScript : MonoBehaviour
                 while (!readyToSpeak)
                 {
                     yield return null;
-                    Debug.Log("VendorScript: Dialog is waiting on audio to finish.");
                 }
                 fruitscanvas.SetActive(true);
                 break;
@@ -147,7 +146,7 @@ public class VendorScript : MonoBehaviour
                 bufferLocation = beverageLoc.position;
                 if (!drinksdialogue)
                 {
-                    bufferAudio = "robo_Juice";
+                    bufferAudio = "robo_Wine";
                 }
                 break;
             case Location.Baked:

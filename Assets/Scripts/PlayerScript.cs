@@ -14,7 +14,7 @@ public class PlayerScript : MonoBehaviour
     private bool veggiedialogue = false;
 
     private bool juiceVoiceLine = false;
-    private bool wineVoiceLine = false;
+    private bool zucchiniVoiceLine = false;
 
     public Basket shoppingBasket;
     // Start is called before the first frame update
@@ -68,9 +68,13 @@ public class PlayerScript : MonoBehaviour
                 break;
             case "Zucchini":
                 // play zucchini voiceline
-                vscript.SpecialVoiceLine("robo_Zucchini");
-                // enable zucchini offer
-                shoppingBasket.zucchiniOffer = true;
+                if (!zucchiniVoiceLine)
+                {
+                    vscript.SpecialVoiceLine("robo_Zucchini");
+                    // enable zucchini offer
+                    shoppingBasket.zucchiniOffer = true;
+                    zucchiniVoiceLine = true;
+                }
                 break;
             case "Juice":
                 // play juice voiceline
@@ -78,14 +82,6 @@ public class PlayerScript : MonoBehaviour
                 {
                     vscript.SpecialVoiceLine("robo_Juice");
                     juiceVoiceLine = true;
-                }
-                break;
-            case "Wine":
-                // play wine voiceline
-                if (!wineVoiceLine)
-                {
-                    vscript.SpecialVoiceLine("robo_Wine");
-                    wineVoiceLine = true;
                 }
                 break;
         }
