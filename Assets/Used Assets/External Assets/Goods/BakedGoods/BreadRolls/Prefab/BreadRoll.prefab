@@ -86,6 +86,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: uploads_files_1027369_Kaiser+Bread+Roll
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 271b136fbc659874782f4ba0eadefbc1, type: 3}
+      propertyPath: m_TagString
+      value: Goods
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 271b136fbc659874782f4ba0eadefbc1, type: 3}
 --- !u!1 &2924965555383268522 stripped

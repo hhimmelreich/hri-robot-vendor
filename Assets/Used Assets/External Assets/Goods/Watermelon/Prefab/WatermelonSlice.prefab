@@ -94,6 +94,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WatermelonSlice
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 75c7c15ec28e29749a8a2c2fc5aa77fd, type: 3}
+      propertyPath: m_TagString
+      value: Goods
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75c7c15ec28e29749a8a2c2fc5aa77fd, type: 3}
 --- !u!1 &77627644832129289 stripped

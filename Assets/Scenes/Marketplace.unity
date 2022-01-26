@@ -4718,7 +4718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbc5b4897b5f7b04ba31cd5189ac888f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 1.2
+  price: 0.75
   type: 0
 --- !u!1 &191308394
 GameObject:
@@ -6761,7 +6761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbc5b4897b5f7b04ba31cd5189ac888f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 1.2
+  price: 0.75
   type: 0
 --- !u!114 &303578767
 MonoBehaviour:
@@ -7266,7 +7266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbc5b4897b5f7b04ba31cd5189ac888f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 1.2
+  price: 0.75
   type: 0
 --- !u!1001 &318056021
 PrefabInstance:
@@ -13833,7 +13833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbc5b4897b5f7b04ba31cd5189ac888f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 1.2
+  price: 0.75
   type: 0
 --- !u!1001 &660227007
 PrefabInstance:
@@ -16518,7 +16518,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbc5b4897b5f7b04ba31cd5189ac888f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 1.2
+  price: 0.75
   type: 0
 --- !u!114 &774559930
 MonoBehaviour:
@@ -18011,7 +18011,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbc5b4897b5f7b04ba31cd5189ac888f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 1.2
+  price: 0.75
   type: 0
 --- !u!114 &849792953
 MonoBehaviour:
@@ -19313,7 +19313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbc5b4897b5f7b04ba31cd5189ac888f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 1.2
+  price: 0.75
   type: 0
 --- !u!1001 &925567056
 PrefabInstance:
@@ -21575,7 +21575,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbc5b4897b5f7b04ba31cd5189ac888f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 1.2
+  price: 0.75
   type: 0
 --- !u!1001 &1050099094
 PrefabInstance:
@@ -25251,7 +25251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbc5b4897b5f7b04ba31cd5189ac888f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 1.2
+  price: 0.75
   type: 0
 --- !u!114 &1260571989
 MonoBehaviour:
@@ -26438,7 +26438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbc5b4897b5f7b04ba31cd5189ac888f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 1.2
+  price: 0.75
   type: 0
 --- !u!1 &1334726808
 GameObject:
@@ -29102,7 +29102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbc5b4897b5f7b04ba31cd5189ac888f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 1.2
+  price: 0.75
   type: 0
 --- !u!114 &1448948477
 MonoBehaviour:
@@ -29602,7 +29602,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbc5b4897b5f7b04ba31cd5189ac888f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 1.2
+  price: 0.75
   type: 0
 --- !u!1 &1469151502
 GameObject:
@@ -34582,7 +34582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbc5b4897b5f7b04ba31cd5189ac888f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 1.2
+  price: 0.75
   type: 0
 --- !u!1001 &1719919625
 PrefabInstance:
@@ -36774,7 +36774,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbc5b4897b5f7b04ba31cd5189ac888f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 1.2
+  price: 0.75
   type: 0
 --- !u!1001 &1798276009
 PrefabInstance:
@@ -39414,7 +39414,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbc5b4897b5f7b04ba31cd5189ac888f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 1.2
+  price: 0.75
   type: 0
 --- !u!1 &1902750261 stripped
 GameObject:
@@ -44038,7 +44038,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbc5b4897b5f7b04ba31cd5189ac888f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 1.2
+  price: 0.75
   type: 0
 --- !u!1001 &2128069066
 PrefabInstance:
