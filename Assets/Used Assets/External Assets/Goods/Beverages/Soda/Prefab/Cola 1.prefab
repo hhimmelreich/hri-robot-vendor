@@ -234,3 +234,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   price: 0.75
+  type: 17
