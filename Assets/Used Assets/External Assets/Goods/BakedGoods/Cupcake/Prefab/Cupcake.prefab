@@ -86,6 +86,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: caupcake
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bc876371d61b14946ae0ce6da1170c55, type: 3}
+      propertyPath: m_TagString
+      value: Goods
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc876371d61b14946ae0ce6da1170c55, type: 3}
 --- !u!1 &225282260661031116 stripped

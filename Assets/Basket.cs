@@ -20,6 +20,11 @@ public class Basket : MonoBehaviour
     private bool secondCake = false;
 
     public bool zucchiniOffer = false;
+
+    private bool lemonVoiceLine = false;
+    private bool garlicVoiceLine = false;
+    private bool pretzelVoiceLine = false;
+    private bool energyVoiceLine = false;
     
     // Start is called before the first frame update
     void Start()
@@ -131,22 +136,41 @@ public class Basket : MonoBehaviour
                     }
                     break;
                 case Goods.ProductType.Lemon:
-                    vendorScript.SpecialVoiceLine("robo_Lemons");
+                    if (!lemonVoiceLine)
+                    {
+                        vendorScript.SpecialVoiceLine("robo_Lemons");
+                        lemonVoiceLine = true;
+                    }
+
                     managerScript.moneySpent += good.GetComponent<Goods>().price;
                     good.GetComponent<Goods>().price = 0f;
                     break;
                 case Goods.ProductType.Garlic:
-                    vendorScript.SpecialVoiceLine("robo_Garlic");
+                    if (!garlicVoiceLine)
+                    {
+                        vendorScript.SpecialVoiceLine("robo_Garlic");
+                        garlicVoiceLine = true;
+                    }
+
                     managerScript.moneySpent += good.GetComponent<Goods>().price;
                     good.GetComponent<Goods>().price = 0f;
                     break;
                 case Goods.ProductType.EnergyDrink:
-                    vendorScript.SpecialVoiceLine("robo_Energydrink");
+                    if (!energyVoiceLine)
+                    {
+                        vendorScript.SpecialVoiceLine("robo_Energydrink");
+                        energyVoiceLine = true;
+                    }
+
                     managerScript.moneySpent += good.GetComponent<Goods>().price;
                     good.GetComponent<Goods>().price = 0f;
                     break;
                 case Goods.ProductType.Pretzel:
-                    vendorScript.SpecialVoiceLine("robo_Pretzels");
+                    if (!pretzelVoiceLine)
+                    {
+                        vendorScript.SpecialVoiceLine("robo_Pretzels");
+                        pretzelVoiceLine = true;
+                    }
                     managerScript.moneySpent += good.GetComponent<Goods>().price;
                     good.GetComponent<Goods>().price = 0f;
                     break;
