@@ -235,6 +235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   price: 0.75
+  type: 20
 --- !u!114 &7639218806118134179
 MonoBehaviour:
   m_ObjectHideFlags: 0

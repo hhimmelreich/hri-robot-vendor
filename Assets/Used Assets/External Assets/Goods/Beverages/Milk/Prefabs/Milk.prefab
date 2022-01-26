@@ -171,6 +171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   price: 1.5
+  type: 19
 --- !u!136 &7408569432113596374
 CapsuleCollider:
   m_ObjectHideFlags: 0
