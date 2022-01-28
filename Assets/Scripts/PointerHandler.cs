@@ -39,7 +39,16 @@ public class PointerHandler : MonoBehaviour
         {
             Debug.Log("Savoury Button was clicked");
             vendor.BakedGoodsSavoury();
+        }else if (e.target.name == "YesButton")
+        {
+            Debug.Log("YesButton was clicked");
+            //hier kann die Funktion aufgerufen werden, die die entsprechende Voiceline aufruft
+        }else if (e.target.name == "NoButton")
+        {
+            Debug.Log("NoButton was clicked");
+            //hier kann die Funktion aufgerufen werden, die die entsprechende Voiceline aufruft
         }
+
     }
   
 }
