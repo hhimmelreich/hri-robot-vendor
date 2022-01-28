@@ -43,7 +43,8 @@ public class VendorScript : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        //agent.destination = BakedLoc.position;
+        agent.destination = bakedLoc.position;
+        Speak("robo_Intro");
 
         audioManager = FindObjectOfType<AudioManager>();
     }
