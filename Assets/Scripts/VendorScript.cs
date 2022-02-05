@@ -113,6 +113,28 @@ public class VendorScript : MonoBehaviour
             case "robo_VeggieSection":
                 veggiedialogue = true; 
                 break;
+            case "hum_Wine":
+                drinksdialogue = true;
+                break;
+            case "hum_BakedGoods":
+                bakedgoodsdialogue = true;
+                while (!readyToSpeak)
+                {
+                    yield return null;
+                }
+                bakedgoodscanvas.SetActive(true);
+                break;
+            case "hum_FruitsQuestion":
+                fruitsdialogue = true;
+                while (!readyToSpeak)
+                {
+                    yield return null;
+                }
+                fruitscanvas.SetActive(true);
+                break;
+            case "hum_VeggieSection":
+                veggiedialogue = true; 
+                break;
             default:
                 break;
         }
@@ -134,7 +156,7 @@ public class VendorScript : MonoBehaviour
         yield break;
     }
     
-    public void AreaEntered(Location locationEntered)
+    public void AreaEntered(Location locationEntered, VendorManager.VendorType vendorType)
     {
         // switch case depending on which location is entered
         switch (locationEntered)
@@ -143,14 +165,28 @@ public class VendorScript : MonoBehaviour
                 bufferLocation = beverageLoc.position;
                 if (!drinksdialogue)
                 {
-                    bufferAudio = "robo_Wine";
+                    if (vendorType == VendorManager.VendorType.Robot)
+                    {
+                        bufferAudio = "robo_Wine";
+                    }
+                    else
+                    {
+                        bufferAudio = "hum_Wine";
+                    }
                 }
                 break;
             case Location.Baked:
                 bufferLocation = bakedLoc.position;
                 if (!bakedgoodsdialogue)
                 {
-                    bufferAudio = "robo_BakedGoods";
+                    if (vendorType == VendorManager.VendorType.Robot)
+                    {
+                        bufferAudio = "robo_BakedGoods";
+                    }
+                    else
+                    {
+                        bufferAudio = "hum_BakedGoods";
+                    }
                     //pointer.enabled = true;
                 }
                 break;
@@ -158,7 +194,14 @@ public class VendorScript : MonoBehaviour
                 bufferLocation = FruitLoc.position;
                 if (!fruitsdialogue)
                 {
-                    bufferAudio = "robo_FruitsQuestion";
+                    if (vendorType == VendorManager.VendorType.Robot)
+                    {
+                        bufferAudio = "robo_FruitsQuestion";
+                    }
+                    else
+                    {
+                        bufferAudio = "hum_FruitsQuestion";
+                    }
                     //pointer.enabled = true;
                 }
                 break;
@@ -166,35 +209,42 @@ public class VendorScript : MonoBehaviour
                 bufferLocation = VeggiesLoc.position;
                 if (!veggiedialogue)
                 {
-                    bufferAudio = "robo_VeggieSection";
+                    if (vendorType == VendorManager.VendorType.Robot)
+                    {
+                        bufferAudio = "robo_VeggieSection";
+                    }
+                    else
+                    {
+                        bufferAudio = "hum_VeggieSection";
+                    }
                 }
                 break;
         }
     }
     //Functions for Dialogue progression called in PointerHandler Script
-    public void FruitsSour()
+    public void FruitsSour(string sentence)
     {
-        Speak("robo_FruitsSour");
+        Speak(sentence);
         fruitscanvas.SetActive(false);
         //pointer.enabled = false;
     }
-    public void FruitsSweet()
+    public void FruitsSweet(string sentence)
     {
-        Speak("robo_FruitsSweet");
+        Speak(sentence);
         fruitscanvas.SetActive(false);
         //pointer.enabled = false;
     }
 
-    public void BakedGoodsSavoury()
+    public void BakedGoodsSavoury(string sentence)
     {
-        Speak("robo_SavouryGoods");
+        Speak(sentence);
         bakedgoodscanvas.SetActive(false);
         //pointer.enabled = false;
     }
 
-    public void BakedGoodsSweet()
+    public void BakedGoodsSweet(string sentence)
     {
-        Speak("robo_SweetGoods");
+        Speak(sentence);
         bakedgoodscanvas.SetActive(false);
         //pointer.enabled = false;
     }

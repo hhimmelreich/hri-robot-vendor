@@ -7,7 +7,7 @@ public class PlayerScript : MonoBehaviour
     public GameObject vendor;
     public GameObject fruitscanvas;
     public GameObject bakedgoodscanvas;
-    private VendorScript vscript;
+    private VendorManager vscript;
     private bool drinksdialogue = false;
     private bool bakedgoodsdialogue = false;
     private bool fruitsdialogue = false;
@@ -21,7 +21,7 @@ public class PlayerScript : MonoBehaviour
     void Start()
     {
         //Calls Vendor Script to get access to Speak Function
-        vscript = vendor.GetComponent<VendorScript>();
+        vscript = vendor.GetComponent<VendorManager>();
         //vscript = (VendorScript)vendor.GetComponent(typeof(VendorScript));
     }
 
