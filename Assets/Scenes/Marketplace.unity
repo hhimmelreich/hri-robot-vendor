@@ -12326,6 +12326,48 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 66c444ebbfa908b4c805725ecb8c1909, type: 3}
   m_PrefabInstance: {fileID: 837659764}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &726370373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726370371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 921261d68a77ac445881942976329890, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  readyToSpeak: 1
+  beverageLoc: {fileID: 1223091591}
+  bakedLoc: {fileID: 1081935154}
+  FruitLoc: {fileID: 2088853443}
+  VeggiesLoc: {fileID: 650174798}
+  fruitscanvas: {fileID: 1701030092}
+  bakedgoodscanvas: {fileID: 5477162}
+  pointer: {fileID: 144363880}
+--- !u!195 &726370374
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726370371}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 1
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1001 &727088677
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14424,7 +14466,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 66c444ebbfa908b4c805725ecb8c1909, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.414481
+      value: 0.554
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 66c444ebbfa908b4c805725ecb8c1909, type: 3}
       propertyPath: m_LocalPosition.y
@@ -14432,23 +14474,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 66c444ebbfa908b4c805725ecb8c1909, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.245631
+      value: -8.995
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 66c444ebbfa908b4c805725ecb8c1909, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.98484445
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 66c444ebbfa908b4c805725ecb8c1909, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.000000021855694
+      value: 0.00000002152446
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 66c444ebbfa908b4c805725ecb8c1909, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.17343977
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 66c444ebbfa908b4c805725ecb8c1909, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.000000003790647
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 66c444ebbfa908b4c805725ecb8c1909, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -14456,7 +14498,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 66c444ebbfa908b4c805725ecb8c1909, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 19.976
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 66c444ebbfa908b4c805725ecb8c1909, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
