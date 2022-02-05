@@ -66,7 +66,6 @@ public class VendorScript : MonoBehaviour
             
             if (Vector3.Distance(bufferLocation, agent.destination) > 1)
             {
-                Debug.Log("New Destination");
                 agent.destination = bufferLocation;
                 readyToMove = false;
             } else if (!bufferAudio.Equals(""))
@@ -74,7 +73,6 @@ public class VendorScript : MonoBehaviour
                 audioManager.Play(bufferAudio);
                 readyToSpeak = false;
                 StartCoroutine(StartDialog(bufferAudio));
-                Debug.Log("Should speak now");
                 bufferAudio = "";
             }
         }
@@ -86,7 +84,6 @@ public class VendorScript : MonoBehaviour
     public void Speak(string sentence)
     {
         audioManager.Play(sentence);
-        Debug.Log("Vendor Speaks");
     }
 
 
@@ -134,7 +131,6 @@ public class VendorScript : MonoBehaviour
         }
         audioManager.Play(name);
         readyToSpeak = false;
-        Debug.Log("coroutine garlic");
         yield break;
     }
     

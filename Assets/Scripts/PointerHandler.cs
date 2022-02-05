@@ -25,27 +25,21 @@ public class PointerHandler : MonoBehaviour
     {
         if (e.target.name == "SweetFruitsButton")
         {
-            Debug.Log("Sweet Button was clicked");
             vendor.FruitsSweet();
         }else if (e.target.name == "SourButton")
         {
-            Debug.Log("Sour Button was clicked");
             vendor.FruitsSour();
         }else if (e.target.name == "SweetGoodsButton")
         {
-            Debug.Log("Sweet Goods Button was clicked");
             vendor.BakedGoodsSweet();
         }else if (e.target.name == "SavoryButton")
         {
-            Debug.Log("Savoury Button was clicked");
             vendor.BakedGoodsSavoury();
         }else if (e.target.name == "YesButton")
         {
-            Debug.Log("YesButton was clicked");
             //hier kann die Funktion aufgerufen werden, die die entsprechende Voiceline aufruft
         }else if (e.target.name == "NoButton")
         {
-            Debug.Log("NoButton was clicked");
             //hier kann die Funktion aufgerufen werden, die die entsprechende Voiceline aufruft
         }
 

@@ -37,7 +37,6 @@ public class PlayerScript : MonoBehaviour
             case "Drinks":
                 vscript.AreaEntered(VendorScript.Location.Beverages);
                 //vscript.Speak("hum_VeggieSection");
-                Debug.Log("Beverages entered");
                 break;
             case "Baked Goods":
                 vscript.AreaEntered(VendorScript.Location.Baked);
@@ -64,7 +63,6 @@ public class PlayerScript : MonoBehaviour
                     veggiedialogue = true;
                 }
                 
-                Debug.Log("Veggies entered");
                 break;
             case "Zucchini":
                 // play zucchini voiceline
