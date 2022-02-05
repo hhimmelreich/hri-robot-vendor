@@ -7,7 +7,7 @@ using UnityEngine;
 public class ExperimentManager : MonoBehaviour
 {
     public string participantID;
-    public string condition;
+    public VendorManager.VendorType condition;
     public float moneySpent = 0f;
 
     
@@ -22,7 +22,8 @@ public class ExperimentManager : MonoBehaviour
         Running
     }
 
-
+    public VendorManager vManagerScript;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -83,13 +84,13 @@ public class ExperimentManager : MonoBehaviour
 
                 if (GUI.Button(new Rect(x, Screen.height/2, w, 80), "Human Vendor", buttonStyle))
                 {
-                    condition = "Human Vendor";
+                    condition = VendorManager.VendorType.Human;
                     menuState = MenuState.Starting;
                 }
                 
                 if (GUI.Button(new Rect(x*3.5f, Screen.height/2, w, 80), "Robot Vendor", buttonStyle))
                 {
-                    condition = "Robot Vendor";
+                    condition = VendorManager.VendorType.Robot;
                     menuState = MenuState.Starting;
                 }
 
@@ -104,7 +105,7 @@ public class ExperimentManager : MonoBehaviour
                 valX += w;
 
                 valX += w+2;
-                GUI.Box(new Rect(valX, 100, w, 80), new GUIContent(condition), boxStyle);
+                GUI.Box(new Rect(valX, 100, w, 80), new GUIContent(condition.ToString()), boxStyle);
                 
                 valX += w+2;
                 
@@ -148,15 +149,7 @@ public class ExperimentManager : MonoBehaviour
     public void StartExperiment()
     {
 
-        //instantiate vendor
-        if (condition == "Human Vendor")
-        {
-            // Spawn Human
-        }
-        if (condition == "Robot Vendor")
-        {
-            // Spawn Robot
-        }
+        vManagerScript.SpawnVendor(condition);
         
     }
     
