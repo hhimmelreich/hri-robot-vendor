@@ -6,7 +6,7 @@ public class AudioManager : MonoBehaviour
 {
     public Sound[] soundlist;
 
-    public VendorScript vendor;
+    public VendorManager vendor;
     // Start is called before the first frame update
     void Awake()
     {
@@ -47,7 +47,7 @@ public class AudioManager : MonoBehaviour
             yield return null;
         }
 
-        vendor.readyToSpeak = true;
+        vendor.MakeReadyToSpeak();
     }
    
 }

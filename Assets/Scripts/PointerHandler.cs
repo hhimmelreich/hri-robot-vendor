@@ -10,7 +10,7 @@ public class PointerHandler : MonoBehaviour
     //This script handles the actions of the pointer and the ones the pointer starts by clicking buttons
     
     public SteamVR_LaserPointer laserPointer;
-    public VendorScript vendor;
+    public VendorManager vendor;
     // Start is called before the first frame update
 
     private void Awake()
