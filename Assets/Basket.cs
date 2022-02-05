@@ -61,7 +61,7 @@ public class Basket : MonoBehaviour
         GameObject good = other.gameObject;
         
         // if item is a good
-        if (good.tag == "Goods")
+        if (good.tag == "Goods" && good.GetComponent<Goods>().pickedUp)
         {
             // put item in basket
             StartCoroutine(ExecuteAfterTime(0.5f, good));

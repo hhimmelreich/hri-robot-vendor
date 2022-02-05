@@ -48,7 +48,6 @@ public class AudioManager : MonoBehaviour
         }
 
         vendor.readyToSpeak = true;
-        Debug.Log("AudioManager: ReadyToSpeak again.");
     }
    
 }

@@ -6,6 +6,8 @@ public class Goods : MonoBehaviour
 {
     public float price;
 
+    public bool pickedUp = false;
+
     public enum ProductType
     {
         Cucumber,
@@ -35,7 +37,7 @@ public class Goods : MonoBehaviour
     }
 
     public ProductType type;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,5 +48,10 @@ public class Goods : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void PickUp()
+    {
+        pickedUp = true;
     }
 }
