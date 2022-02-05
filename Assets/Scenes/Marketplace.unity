@@ -2748,6 +2748,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laserPointer: {fileID: 152409666}
   vendor: {fileID: 1636321994}
+  endFunctionality: {fileID: 408924402}
 --- !u!4 &144363881
 Transform:
   m_ObjectHideFlags: 0
@@ -2880,7 +2881,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.952
+      value: 2.89
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2888,11 +2889,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.476
+      value: -7.41
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.6727285
+      value: 0.9313993
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2900,7 +2901,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.73988944
+      value: 0.36399913
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalRotation.z
@@ -2908,7 +2909,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 95.444
+      value: 42.692
       objectReference: {fileID: 0}
     - target: {fileID: 11455280, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: head
@@ -7122,6 +7123,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   experimentManager: {fileID: 441356201}
+  finishedCanvas: {fileID: 747878423}
+  vendor: {fileID: 1636321994}
 --- !u!54 &408924403
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14530,7 +14533,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 66c444ebbfa908b4c805725ecb8c1909, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66c444ebbfa908b4c805725ecb8c1909, type: 3}
@@ -37441,7 +37444,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 36a8f0def317751458d9280a2cd904bd, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 36a8f0def317751458d9280a2cd904bd, type: 3}
       propertyPath: m_Controller
@@ -37450,6 +37453,10 @@ PrefabInstance:
     - target: {fileID: 5866666021909216657, guid: 36a8f0def317751458d9280a2cd904bd, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8417361359673230750, guid: 36a8f0def317751458d9280a2cd904bd, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36a8f0def317751458d9280a2cd904bd, type: 3}

@@ -8,7 +8,8 @@ public class EndFunctionality : MonoBehaviour
     public GameObject finishedCanvas;
     public VendorManager vendor;
     private ExperimentManager managerScript;
-    
+
+    private bool hasSpoken = false;
     
     // Start is called before the first frame update
     void Start()
@@ -27,10 +28,11 @@ public class EndFunctionality : MonoBehaviour
         GameObject trigger = other.gameObject;
         
         // if item is bicycle
-        if (trigger.tag == "Basket")
+        if (trigger.tag == "Basket" && !hasSpoken)
         {
             vendor.SpecialVoiceLine("Finished");
             finishedCanvas.SetActive(true);
+            hasSpoken = true;
         }
     }
 
@@ -42,5 +44,6 @@ public class EndFunctionality : MonoBehaviour
     public void continueExperiment()
     {
         finishedCanvas.SetActive(false);
+        hasSpoken = false;
     }
 }
