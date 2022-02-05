@@ -43,6 +43,8 @@ public class VendorScript : MonoBehaviour
 
     private Animator thisAnim;
 
+    public VendorManager vendorManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -54,11 +56,15 @@ public class VendorScript : MonoBehaviour
 
         agent = GetComponent<NavMeshAgent>();
 
-        //Speak("robo_Intro");
-
         audioManager = FindObjectOfType<AudioManager>();
-        
-        
+        if (vendorManager.vendorType == VendorManager.VendorType.Robot)
+        {
+            Speak("robo_Intro");
+        }
+        if (vendorManager.vendorType == VendorManager.VendorType.Human)
+        {
+            Speak("hum_Intro");
+        }
     }
 
     // Update is called once per frame
@@ -97,6 +103,7 @@ public class VendorScript : MonoBehaviour
     }
     public void Speak(string sentence)
     {
+        readyToSpeak = false;
         audioManager.Play(sentence);
     }
 

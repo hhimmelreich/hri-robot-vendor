@@ -12346,6 +12346,7 @@ MonoBehaviour:
   fruitscanvas: {fileID: 1701030092}
   bakedgoodscanvas: {fileID: 5477162}
   pointer: {fileID: 144363880}
+  vendorManager: {fileID: 1636321994}
 --- !u!195 &726370374
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -14529,7 +14530,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 66c444ebbfa908b4c805725ecb8c1909, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66c444ebbfa908b4c805725ecb8c1909, type: 3}
@@ -24223,15 +24224,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ad0688df2cb86e340a5d1519ecf3d017, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ad0688df2cb86e340a5d1519ecf3d017, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ad0688df2cb86e340a5d1519ecf3d017, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ad0688df2cb86e340a5d1519ecf3d017, type: 3}
       propertyPath: m_LocalPosition.x
@@ -28414,6 +28415,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   robotVendor: {fileID: 2092022562}
   humanVendor: {fileID: 726370371}
+  vendorType: 2
 --- !u!4 &1636321995
 Transform:
   m_ObjectHideFlags: 0
@@ -37382,6 +37384,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36a8f0def317751458d9280a2cd904bd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 36a8f0def317751458d9280a2cd904bd, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 36a8f0def317751458d9280a2cd904bd, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 36a8f0def317751458d9280a2cd904bd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.785
       objectReference: {fileID: 0}
@@ -37427,7 +37441,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 36a8f0def317751458d9280a2cd904bd, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 36a8f0def317751458d9280a2cd904bd, type: 3}
       propertyPath: m_Controller
@@ -37491,6 +37505,7 @@ MonoBehaviour:
   fruitscanvas: {fileID: 1701030092}
   bakedgoodscanvas: {fileID: 5477162}
   pointer: {fileID: 144363880}
+  vendorManager: {fileID: 1636321994}
 --- !u!1001 &2100529008
 PrefabInstance:
   m_ObjectHideFlags: 0

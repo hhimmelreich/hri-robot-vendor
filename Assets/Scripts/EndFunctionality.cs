@@ -5,9 +5,10 @@ using UnityEngine;
 public class EndFunctionality : MonoBehaviour
 {
     public GameObject experimentManager;
-    //public GameObject finishedCanvas;
-    //public VendorScript vendor;
+    public GameObject finishedCanvas;
+    public VendorManager vendor;
     private ExperimentManager managerScript;
+    
     
     // Start is called before the first frame update
     void Start()
@@ -28,10 +29,18 @@ public class EndFunctionality : MonoBehaviour
         // if item is bicycle
         if (trigger.tag == "Basket")
         {
-            //vendor.Speak("robo_Finished");
-            //finishedCanvas.SetActive(true);
-            managerScript.SaveData();
-
+            vendor.SpecialVoiceLine("Finished");
+            finishedCanvas.SetActive(true);
         }
+    }
+
+    public void endExperiment()
+    {
+        managerScript.SaveData();
+    }
+
+    public void continueExperiment()
+    {
+        finishedCanvas.SetActive(false);
     }
 }
