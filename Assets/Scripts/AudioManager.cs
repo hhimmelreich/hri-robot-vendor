@@ -1,13 +1,16 @@
+using System.Collections;
 using UnityEngine.Audio;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    public Sound[] sounds;
+    public Sound[] soundlist;
+
+    public VendorScript vendor;
     // Start is called before the first frame update
     void Awake()
     {
-        foreach (Sound s in sounds)
+        foreach (Sound s in soundlist)
         {
             //Audio files can be added to the list sound
             //they have a volume, pitch and loop ability
@@ -19,17 +22,32 @@ public class AudioManager : MonoBehaviour
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
+
         }
     }
 
     void Start()
     {
-
+        Play("Ambient Sound");
     }
+    
     public void Play(string name)
     {
         // searches the sound in the list and plays it
-        Sound s = System.Array.Find(sounds, sound => sound.name == name);
+        Sound s = System.Array.Find(soundlist, sound => sound.name == name);
         s.source.Play();
+        
+        StartCoroutine(checkIfFinished(s.source));
     }
+
+    IEnumerator checkIfFinished(AudioSource source)
+    {
+        while (source.isPlaying)
+        {
+            yield return null;
+        }
+
+        vendor.readyToSpeak = true;
+    }
+   
 }
