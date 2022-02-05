@@ -33,13 +33,13 @@ public class VendorManager : MonoBehaviour
         if (vendorType == VendorType.Human)
         {
             humanVendor.SetActive(true);
-            vendor = robotVendor.GetComponent<VendorScript>();
+            vendor = humanVendor.GetComponent<VendorScript>();
         }
 
         if (vendorType == VendorType.Robot)
         {
             robotVendor.SetActive(true);
-            vendor = humanVendor.GetComponent<VendorScript>();
+            vendor = robotVendor.GetComponent<VendorScript>();
         }
     }
     
@@ -50,7 +50,7 @@ public class VendorManager : MonoBehaviour
     {
         if (vendorType == VendorType.Robot)
         {
-            vendor.Speak("robo_SweetGoods");
+            vendor.FruitsSweet("robo_FruitsSweet");
         }
 
         if (vendorType == VendorType.Human)
@@ -63,7 +63,7 @@ public class VendorManager : MonoBehaviour
     {
         if (vendorType == VendorType.Robot)
         {
-            vendor.Speak("robo_FruitsSour");
+            vendor.FruitsSour("robo_FruitsSour");
         }
 
         if (vendorType == VendorType.Human)
@@ -76,7 +76,7 @@ public class VendorManager : MonoBehaviour
     {
         if (vendorType == VendorType.Robot)
         {
-            vendor.Speak("robo_FruitsSweet");
+            vendor.BakedGoodsSweet("robo_FruitsSweet");
         }
 
         if (vendorType == VendorType.Human)
@@ -89,7 +89,7 @@ public class VendorManager : MonoBehaviour
     {
         if (vendorType == VendorType.Robot)
         {
-            vendor.Speak("robo_SavouryGoods");
+            vendor.BakedGoodsSavoury("robo_SavouryGoods");
         }
 
         if (vendorType == VendorType.Human)

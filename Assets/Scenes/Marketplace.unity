@@ -2747,7 +2747,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   laserPointer: {fileID: 152409666}
-  vendor: {fileID: 1757936193}
+  vendor: {fileID: 1636321994}
 --- !u!4 &144363881
 Transform:
   m_ObjectHideFlags: 0
@@ -8144,7 +8144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   experimentManager: {fileID: 441356201}
-  vendorScript: {fileID: 1757936193}
+  vendorScript: {fileID: 1636321994}
   zucchiniOffer: 0
 --- !u!1 &477591093
 GameObject:
@@ -12316,6 +12316,16 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 726263665}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &726370371 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 66c444ebbfa908b4c805725ecb8c1909, type: 3}
+  m_PrefabInstance: {fileID: 837659764}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &726370372 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 66c444ebbfa908b4c805725ecb8c1909, type: 3}
+  m_PrefabInstance: {fileID: 837659764}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &727088677
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14401,6 +14411,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 828027507}
   m_CullTransparentMesh: 1
+--- !u!1001 &837659764
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1636321995}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 66c444ebbfa908b4c805725ecb8c1909, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 66c444ebbfa908b4c805725ecb8c1909, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.414481
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 66c444ebbfa908b4c805725ecb8c1909, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 66c444ebbfa908b4c805725ecb8c1909, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.245631
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 66c444ebbfa908b4c805725ecb8c1909, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 66c444ebbfa908b4c805725ecb8c1909, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.000000021855694
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 66c444ebbfa908b4c805725ecb8c1909, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 66c444ebbfa908b4c805725ecb8c1909, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 66c444ebbfa908b4c805725ecb8c1909, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 66c444ebbfa908b4c805725ecb8c1909, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 66c444ebbfa908b4c805725ecb8c1909, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 66c444ebbfa908b4c805725ecb8c1909, type: 3}
+      propertyPath: m_Name
+      value: nathan8
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 66c444ebbfa908b4c805725ecb8c1909, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66c444ebbfa908b4c805725ecb8c1909, type: 3}
 --- !u!1001 &847232662
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26127,9 +26198,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b1d1aef391060740bbc90793202930f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vendor: {fileID: 1757936191}
   fruitscanvas: {fileID: 1701030092}
   bakedgoodscanvas: {fileID: 5477162}
+  vscript: {fileID: 1636321994}
   shoppingBasket: {fileID: 475875179}
 --- !u!1001 &1525235181
 PrefabInstance:
@@ -28354,7 +28425,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   robotVendor: {fileID: 1757936191}
-  humanVendor: {fileID: 0}
+  humanVendor: {fileID: 726370371}
 --- !u!4 &1636321995
 Transform:
   m_ObjectHideFlags: 0
@@ -28367,6 +28438,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1757936194}
+  - {fileID: 726370372}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -35462,6 +35534,12 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: hum_Zucchini
+    clip: {fileID: 8300000, guid: 0422ee9e50cacb342bc485de8e1e0955, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
   - name: robo_BakedGoods
     clip: {fileID: 8300000, guid: f5067c3b830ad524bbcce9dda26d0353, type: 3}
     volume: 1
@@ -35570,13 +35648,7 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: hum_Zucchini
-    clip: {fileID: 8300000, guid: 0422ee9e50cacb342bc485de8e1e0955, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  vendor: {fileID: 1757936193}
+  vendor: {fileID: 1636321994}
 --- !u!4 &1986456202
 Transform:
   m_ObjectHideFlags: 0
