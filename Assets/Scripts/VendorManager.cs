@@ -13,7 +13,7 @@ public class VendorManager : MonoBehaviour
     public GameObject robotVendor;
     public GameObject humanVendor;
 
-    private VendorType vendorType = VendorType.None;
+    public VendorType vendorType = VendorType.None;
 
     private VendorScript vendor;
 

@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using Valve.VR;
+
 public class VendorScript : MonoBehaviour
 {
     public enum Location
@@ -39,14 +41,30 @@ public class VendorScript : MonoBehaviour
 
     public PointerHandler pointer;
 
+    private Animator thisAnim;
+
+    public VendorManager vendorManager;
+
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("starting vendor up");
+        
+        thisAnim = this.GetComponent<Animator>();
+
+        bufferLocation = new Vector3(-0.785000026f,0,-6.08699989f);
+
         agent = GetComponent<NavMeshAgent>();
-        agent.destination = bakedLoc.position;
-        //Speak("robo_Intro");
 
         audioManager = FindObjectOfType<AudioManager>();
+        if (vendorManager.vendorType == VendorManager.VendorType.Robot)
+        {
+            Speak("robo_Intro");
+        }
+        if (vendorManager.vendorType == VendorManager.VendorType.Human)
+        {
+            Speak("hum_Intro");
+        }
     }
 
     // Update is called once per frame
@@ -55,18 +73,20 @@ public class VendorScript : MonoBehaviour
 
         if (!readyToMove)
         {
-            if (Vector3.Distance(transform.position, agent.destination) < 1)
+            if (Vector3.Distance(transform.position, agent.destination) < 0.8)
             {
                 readyToMove = true;
+                thisAnim.SetBool("Walking", false);
             }
         }
 
         if (readyToMove && readyToSpeak)
         {
             
-            if (Vector3.Distance(bufferLocation, agent.destination) > 1)
+            if (Vector3.Distance(bufferLocation, agent.destination) > 0.8)
             {
                 agent.destination = bufferLocation;
+                thisAnim.SetBool("Walking", true);
                 readyToMove = false;
             } else if (!bufferAudio.Equals(""))
             {
@@ -83,6 +103,7 @@ public class VendorScript : MonoBehaviour
     }
     public void Speak(string sentence)
     {
+        readyToSpeak = false;
         audioManager.Play(sentence);
     }
 
@@ -152,6 +173,7 @@ public class VendorScript : MonoBehaviour
             yield return null;
         }
         audioManager.Play(name);
+        thisAnim.SetTrigger("Pointing");
         readyToSpeak = false;
         yield break;
     }

@@ -13,6 +13,8 @@ public class PointerHandler : MonoBehaviour
     public VendorManager vendor;
     // Start is called before the first frame update
 
+    public EndFunctionality endFunctionality;
+    
     private void Awake()
     {
         //laserPointer.PointerIn += PointerInside;
@@ -37,10 +39,10 @@ public class PointerHandler : MonoBehaviour
             vendor.BakedGoodsSavoury();
         }else if (e.target.name == "YesButton")
         {
-            //hier kann die Funktion aufgerufen werden, die die entsprechende Voiceline aufruft
+            endFunctionality.endExperiment();
         }else if (e.target.name == "NoButton")
         {
-            //hier kann die Funktion aufgerufen werden, die die entsprechende Voiceline aufruft
+            endFunctionality.continueExperiment();
         }
 
     }
