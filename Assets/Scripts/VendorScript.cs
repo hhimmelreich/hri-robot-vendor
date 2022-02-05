@@ -173,6 +173,7 @@ public class VendorScript : MonoBehaviour
             yield return null;
         }
         audioManager.Play(name);
+        thisAnim.SetTrigger("Pointing");
         readyToSpeak = false;
         yield break;
     }
