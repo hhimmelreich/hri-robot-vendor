@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
-    public GameObject vendor;
     public GameObject fruitscanvas;
     public GameObject bakedgoodscanvas;
-    private VendorScript vscript;
+    public VendorManager vscript;
     private bool drinksdialogue = false;
     private bool bakedgoodsdialogue = false;
     private bool fruitsdialogue = false;
@@ -21,7 +20,6 @@ public class PlayerScript : MonoBehaviour
     void Start()
     {
         //Calls Vendor Script to get access to Speak Function
-        vscript = vendor.GetComponent<VendorScript>();
         //vscript = (VendorScript)vendor.GetComponent(typeof(VendorScript));
     }
 
@@ -68,7 +66,7 @@ public class PlayerScript : MonoBehaviour
                 // play zucchini voiceline
                 if (!zucchiniVoiceLine)
                 {
-                    vscript.SpecialVoiceLine("robo_Zucchini");
+                    vscript.SpecialVoiceLine("Zucchini");
                     // enable zucchini offer
                     shoppingBasket.zucchiniOffer = true;
                     zucchiniVoiceLine = true;
@@ -78,7 +76,7 @@ public class PlayerScript : MonoBehaviour
                 // play juice voiceline
                 if (!juiceVoiceLine)
                 {
-                    vscript.SpecialVoiceLine("robo_Juice");
+                    vscript.SpecialVoiceLine("Juice");
                     juiceVoiceLine = true;
                 }
                 break;

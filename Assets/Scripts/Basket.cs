@@ -11,7 +11,7 @@ public class Basket : MonoBehaviour
     public GameObject experimentManager;
     private ExperimentManager managerScript;
 
-    public VendorScript vendorScript;
+    public VendorManager vendorScript;
     
     private bool firstApple = true;
     private bool firstWatermelon = true;
@@ -138,7 +138,7 @@ public class Basket : MonoBehaviour
                 case Goods.ProductType.Lemon:
                     if (!lemonVoiceLine)
                     {
-                        vendorScript.SpecialVoiceLine("robo_Lemons");
+                        vendorScript.SpecialVoiceLine("Lemons");
                         lemonVoiceLine = true;
                     }
 
@@ -148,7 +148,7 @@ public class Basket : MonoBehaviour
                 case Goods.ProductType.Garlic:
                     if (!garlicVoiceLine)
                     {
-                        vendorScript.SpecialVoiceLine("robo_Garlic");
+                        vendorScript.SpecialVoiceLine("Garlic");
                         garlicVoiceLine = true;
                     }
 
@@ -158,7 +158,7 @@ public class Basket : MonoBehaviour
                 case Goods.ProductType.EnergyDrink:
                     if (!energyVoiceLine)
                     {
-                        vendorScript.SpecialVoiceLine("robo_Energydrink");
+                        vendorScript.SpecialVoiceLine("Energydrink");
                         energyVoiceLine = true;
                     }
 
@@ -168,7 +168,7 @@ public class Basket : MonoBehaviour
                 case Goods.ProductType.Pretzel:
                     if (!pretzelVoiceLine)
                     {
-                        vendorScript.SpecialVoiceLine("robo_Pretzels");
+                        vendorScript.SpecialVoiceLine("Pretzels");
                         pretzelVoiceLine = true;
                     }
                     managerScript.moneySpent += good.GetComponent<Goods>().price;
