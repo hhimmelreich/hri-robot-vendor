@@ -73,7 +73,7 @@ public class VendorScript : MonoBehaviour
 
         if (!readyToMove)
         {
-            if (Vector3.Distance(transform.position, agent.destination) < 0.8)
+            if (Vector3.Distance(transform.position, agent.destination) < 0.6)
             {
                 readyToMove = true;
                 thisAnim.SetBool("Walking", false);
@@ -83,7 +83,7 @@ public class VendorScript : MonoBehaviour
         if (readyToMove && readyToSpeak)
         {
             
-            if (Vector3.Distance(bufferLocation, agent.destination) > 0.8)
+            if (Vector3.Distance(bufferLocation, agent.destination) > 0.6)
             {
                 agent.destination = bufferLocation;
                 thisAnim.SetBool("Walking", true);
