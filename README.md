@@ -18,7 +18,11 @@ As the sample size was very small, this study should be seen as a proof of conce
 ### Team:
 
 Janine Reichmann
+
 Imogen Hüsing
+
 Anna Jansen
+
 Lea Kühne
+
 Henrik Himmelreich
