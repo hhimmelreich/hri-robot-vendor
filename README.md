@@ -1,7 +1,7 @@
 # hri-robot-vendor
 This is the repository for our group project 
 
-**"Robot vs. Human Vendor: Influence on Spending Behaviour in Human-Robot Interactions using Virtual Reality"**
+**Robot vs. Human Vendor: Influence on Spending Behaviour in Human-Robot Interactions using Virtual Reality**
 
 for the course Human-Robot Interaction at the University of Osnabrueck in the WS 2021/22.
 
