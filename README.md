@@ -4,6 +4,7 @@ This is the repository for our group project
 "Robot vs. Human Vendor: Influence on Spending Behaviour in Human-Robot Interactions using Virtual Reality" 
 
 for the course Human-Robot Interaction at the University of Osnabrueck in the WS 2021/22.
+
 We planned, implemented and conducted a VR experiment to answer the following research question:
 
 "Robot vs Human vendor - Who is more effective in increasing the spending behaviour of human customers?"
